@@ -1,0 +1,37 @@
+error:
+  cmd-no-perm: '&4You do not have permission to use that command!'
+  must-be-player: '&4You must be a player to use this command!'
+  cannot-place-block: '&4You cannot place throwable TNT blocks!'
+  player-not-found: '&4That player does not exist!'
+  cannot-pickup: '&4You do not have permission to pick up this TNT!'
+  tnt-no-perm: '&4You do not have permission to use this type of TNT!'
+tnt:
+  multi:
+    display-name: '&aMulti TNT'
+    lore: '&eThree explosions in on TNT'
+  sniper:
+    display-name: '&aSniper TNT'
+    lore: '&eA small percise explosion that does double the damage'
+  drill:
+    display-name: '&aDrill TNT'
+    lore: '&eDrills a 5 radius hole in the ground'
+  chemical:
+    display-name: '&aChemical TNT'
+    lore: '&eA throwable tnt that causes nausea'
+  smokebomb:
+    display-name: '&aSmokeBomb TNT'
+    lore: '&eA throwable tnt that causes blindness and confusion'
+  timebomb:
+    display-name: '&aTimeBomb TNT'
+    lore: '&eA tnt with a settable fuse length'
+    menu-title: '&bSelect timebomb fuse length'
+    menu-time-color: '&b{length}'
+  healing:
+    display-name: '&aHealing TNT'
+    lore: '&eA tnt that restores players health'
+  lucky:
+    display-name: '&aLucky TNT'
+    lore: '&eMob spawners blown up with this TNT have a chance to drop'
+  suicide:
+    display-name: '&aSuicide TNT'
+    lore: '&eBlows up immediately on right click'

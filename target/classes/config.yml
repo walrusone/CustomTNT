@@ -1,0 +1,51 @@
+tntTypes:
+  multi:
+    numOfExplosions: 3
+    explosionPower: 4
+    fuse: 4
+    throwable: false
+    punchable: false
+  sniper:
+    explosionPower: 1
+    fuse: 4
+    throwable: false
+    punchable: false
+  drill:
+    depth: 20
+    fuse: 4
+    throwable: false
+    punchable: false
+  chemical:
+    effectDuration: 30
+    effectRadius: 5
+    fuse: 2
+    throwable: true
+    punchable: false
+  smokebomb:
+    effectDuration: 30
+    effectRadius: 5
+    fuse: 2
+    throwable: true
+    punchable: false
+  timebomb:
+    explosionPower: 4
+    option1: 2
+    option2: 4
+    option3: 6
+    option4: 8
+    option5: 10
+    punchable: false
+  healing:
+    effectRadius: 10
+    healingAmount: 10
+    fuse: 4
+    throwable: true
+    punchable: false
+  lucky:
+    chanceOfSpawnerDrop: 50
+    explosionPower: 4
+    fuse: 4
+    throwable: false
+    punchable: false
+  suicide:
+    explosionPower: 6

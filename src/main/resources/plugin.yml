@@ -1,0 +1,72 @@
+name: CustomTNT
+main: com.walrusone.customtnt.CustomTNT
+version: 1.0
+api-version: 1.13
+
+commands:
+   customtnt:
+      description: This is the main plugin command.
+      aliases: [ctnt]
+      usage: /<command> [args]
+permissions:
+  customtnt.*:
+    description: Gives access to all customtnt permissions.
+    default: op
+    children:
+      customtnt.give: true
+      customtnt.reload: true
+      customtnt.tnt: true
+  customtnt.admin:
+    description: Gives access to all customtnt permissions.
+    default: op
+    children:
+      customtnt.give: true
+      customtnt.reload: true
+      customtnt.tnt: true
+  customtnt.tnt:
+    description: Gives access to all tnt type permissions.
+    default: op
+    children:
+      customtnt.chemical: true
+      customtnt.drill: true
+      customtnt.healing: true
+      customtnt.lucky: true
+      customtnt.multi: true
+      customtnt.smokebomb: true
+      customtnt.sniper: true
+      customtnt.timebomb: true
+      customtnt.healing: true
+      customtnt.suicide: true
+  customtnt.give:
+    description: Allows a player to use give commands.
+    default: op
+  customtnt.reload:
+    description: Allows a player to use reload commands.
+    default: op
+  customtnt.chemical:
+    description: Allows a player to use chemical tnt.
+    default: op
+  customtnt.drill:
+    description: Allows a player to use drill tnt.
+    default: op
+  customtnt.healing:
+    description: Allows a player to use healing tnt.
+    default: op
+  customtnt.lucky:
+    description: Allows a player to use lucky tnt.
+    default: op
+  customtnt.multi:
+    description: Allows a player to use multi tnt.
+    default: op
+  customtnt.smokebomb:
+    description: Allows a player to use smokebomb tnt.
+    default: op
+  customtnt.sniper:
+    description: Allows a player to use sniper tnt.
+    default: op
+  customtnt.timebomb:
+    description: Allows a player to use timebomb tnt.
+    default: op
+  customtnt.suicide:
+    description: Allows a player to use suicide tnt.
+    default: op
