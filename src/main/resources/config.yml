@@ -1,32 +1,18 @@
 tntTypes:
-  multi:
-    numOfExplosions: 3
-    explosionPower: 4
-    fuse: 4
-    throwable: false
-    punchable: false
   sniper:
     explosionPower: 1
     fuse: 4
     throwable: false
     punchable: false
+    enableCrafting: true
+    recipe: AIR:BOW:AIR:BOW:TNT:BOW:AIR:BOW:AIR
   drill:
     depth: 20
     fuse: 4
     throwable: false
     punchable: false
-  chemical:
-    effectDuration: 30
-    effectRadius: 5
-    fuse: 2
-    throwable: true
-    punchable: false
-  smokebomb:
-    effectDuration: 30
-    effectRadius: 5
-    fuse: 2
-    throwable: true
-    punchable: false
+    enableCrafting: true
+    recipe: AIR:DIAMOND_PICKAXE:AIR:AIR:TNT:AIR:AIR:AIR:AIR
   timebomb:
     explosionPower: 4
     option1: 2
@@ -35,17 +21,62 @@ tntTypes:
     option4: 8
     option5: 10
     punchable: false
-  healing:
-    effectRadius: 10
-    healingAmount: 10
-    fuse: 4
-    throwable: true
-    punchable: false
+    enableCrafting: true
+    recipe: AIR:CLOCK:AIR:CLOCK:TNT:CLOCK:AIR:CLOCK:AIR
   lucky:
     chanceOfSpawnerDrop: 50
     explosionPower: 4
     fuse: 4
     throwable: false
     punchable: false
+    enableCrafting: true
+    recipe: DIAMOND:DIAMOND:DIAMOND:DIAMOND:TNT:DIAMOND:DIAMOND:DIAMOND:DIAMOND
   suicide:
     explosionPower: 6
+    enableCrafting: true
+    recipe: POISONOUS_POTATO:POISONOUS_POTATO:POISONOUS_POTATO:POISONOUS_POTATO:TNT:POISONOUS_POTATO:POISONOUS_POTATO:POISONOUS_POTATO:POISONOUS_POTATO
+  smokebomb:
+    particleRadius: 5
+    particleDuration: 5
+    particleType: SMOKE_LARGE
+    fuse: 1
+    throwable: true
+    punchable: false
+    enableCrafting: true
+    recipe: AIR:COAL:AIR:COAL:TNT:COAL:AIR:COAL:AIR
+  healing:
+    particleRadius: 10
+    particleDuration: 5
+    particleType: HEART
+    effectTypes:
+    - 'REGENERATION:5:2'
+    - 'ABSORPTION:6:1'
+    fuse: 4
+    throwable: true
+    punchable: false
+    enableCrafting: true
+    recipe: AIR:GOLDEN_APPLE:AIR:GOLDEN_APPLE:TNT:GOLDEN_APPLE:AIR:GOLDEN_APPLE:AIR
+  concussion:
+    particleRadius: 10
+    particleDuration: 1
+    particleType: FIREWORKS_SPARK
+    effectTypes:
+    - 'CONFUSION:10:5'
+    - 'SLOW:8:5'
+    fuse: 4
+    throwable: true
+    punchable: false
+    enableCrafting: true
+    recipe: PUFFERFISH:COBWEB:PUFFERFISH:COBWEB:TNT:COBWEB:PUFFERFISH:COBWEB:PUFFERFISH
+  flashbang:
+    particleRadius: 15
+    particleDuration: 1
+    particleType: SQUID_INK
+    effectTypes:
+    - 'BLINDNESS:10:5'
+    - 'SLOW:10:5'
+    fuse: 4
+    throwable: true
+    punchable: false
+    enableCrafting: true
+    recipe: SEA_LANTERN:COBWEB:SEA_LANTERN:COBWEB:TNT:COBWEB:SEA_LANTERN:COBWEB:SEA_LANTERN

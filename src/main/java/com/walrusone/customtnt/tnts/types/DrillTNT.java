@@ -20,11 +20,10 @@ public class DrillTNT extends ExplosionType {
 	
 	private int depth;
 	
-	public DrillTNT(String name, String lore, int radius, int fuse, int depth, boolean throwable, boolean punchable) {
+	public DrillTNT(String name, String lore, int fuse, int depth, boolean throwable, boolean punchable) {
 		this.name = name;
 		this.permission = "customtnt.drill";
 		this.lore.add(lore);
-		this.radius = radius;
 		this.fuse = fuse;
 		this.depth = depth;
 		this.throwable = throwable;

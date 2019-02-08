@@ -6,6 +6,7 @@ import java.util.List;
 import org.bukkit.Location;
 import org.bukkit.inventory.ItemStack;
 
+
 public abstract class ExplosionType {
 
 	protected String name;
@@ -50,5 +51,6 @@ public abstract class ExplosionType {
 	public String getPermission() {
 		return permission;
 	}
+
 
 }

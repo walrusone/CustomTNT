@@ -18,15 +18,15 @@ public class GiveCmd extends BaseCmd {
 	private List<String> types = new ArrayList<>();
 	
 	GiveCmd() {
-		types.add("multi");
 		types.add("sniper");
 		types.add("drill");
-		types.add("chemical");
 		types.add("timebomb");
 		types.add("smokebomb");
 		types.add("healing");
 		types.add("lucky");
 		types.add("suicide");
+		types.add("concussion");
+		types.add("flashbang");
 		
 		forcePlayer = false;
 		cmdName = "give";

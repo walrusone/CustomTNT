@@ -1,12 +1,21 @@
 package com.walrusone.customtnt.tnts.types;
 
+import com.walrusone.customtnt.CustomTNT;
+import com.walrusone.customtnt.tnts.TNTManager;
 import net.minecraft.server.v1_13_R2.NBTTagCompound;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.craftbukkit.v1_13_R2.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class SniperTNT extends ExplosionType {
 	
@@ -38,5 +47,4 @@ public class SniperTNT extends ExplosionType {
 		location.getWorld().createExplosion(location.getX(), location.getY(), location.getZ(), radius, false, true);
 		location.getWorld().createExplosion(location.getX(), location.getY(), location.getZ(), radius, false, true);
 	}
-
 }

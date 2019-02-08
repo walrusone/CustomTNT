@@ -7,14 +7,10 @@ import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.craftbukkit.v1_13_R2.inventory.CraftItemStack;
-import org.bukkit.entity.Player;
+import org.bukkit.entity.AreaEffectCloud;
+import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
-import org.bukkit.util.Vector;
-
-import com.walrusone.customtnt.utils.Util;
 
 public class SmokeBombTNT extends ExplosionType {
 	
@@ -47,16 +43,16 @@ public class SmokeBombTNT extends ExplosionType {
 	@Override
 	public void onExplode(final Location location) {
 		location.getWorld().playSound(location, Sound.ENTITY_GENERIC_EXPLODE, 1, 1);
-		Util.get().surroundParticles(location, (int) radius, Particle.SMOKE_LARGE);
-		Util.get().surroundParticles(location, 1, Particle.FLAME);
-		for (Player player: location.getWorld().getPlayers()) {
-			if (location.distance(player.getLocation()) < radius) {
-				Vector vector = player.getLocation().toVector().subtract(location.toVector());
-				player.setVelocity(vector.multiply(.4).setY(.25));
-				player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, duration * 20, 1));
-				player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, duration * 20, 1));
-			}
+		for (int i = 0; i < 3; i++) {
+			doEffectCould(location, i);
 		}
+	}
+
+	private void doEffectCould(Location location, int y) {
+		AreaEffectCloud aef =(AreaEffectCloud) location.getWorld().spawnEntity(location.add(0, y, 0), EntityType.AREA_EFFECT_CLOUD);
+		aef.setParticle(Particle.SMOKE_LARGE);
+		aef.setRadius(radius);
+		aef.setDuration(duration);
 	}
 
 }

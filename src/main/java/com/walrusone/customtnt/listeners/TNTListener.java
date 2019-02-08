@@ -13,8 +13,9 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.block.CreatureSpawner;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityPickupItemEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.*;
 import org.bukkit.inventory.meta.BlockStateMeta;
 import org.bukkit.material.Dispenser;
 import org.bukkit.entity.TNTPrimed;
@@ -27,9 +28,6 @@ import org.bukkit.event.block.BlockDispenseEvent;
 import org.bukkit.event.block.BlockExplodeEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.ExplosionPrimeEvent;
-import org.bukkit.event.player.PlayerAnimationEvent;
-import org.bukkit.event.player.PlayerAnimationType;
-import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -42,7 +40,6 @@ import com.walrusone.customtnt.tnts.TNTManager.TNTType;
 import com.walrusone.customtnt.utils.Messaging;
 import com.walrusone.customtnt.tnts.types.ExplosionType;
 import com.walrusone.customtnt.tnts.types.LuckyTNT;
-
 
 public class TNTListener implements Listener
 {
@@ -281,7 +278,7 @@ public class TNTListener implements Listener
         }
     }
 
-	private void doSuicideBombing(Player player, String type) {
+    private void doSuicideBombing(Player player, String type) {
 		int amount = player.getInventory().getItemInMainHand().getAmount();
 		if (amount > 1) {
 			player.getInventory().getItemInMainHand().setAmount(amount - 1);
@@ -297,29 +294,29 @@ public class TNTListener implements Listener
 		player.setHealth(0);
     }
     
-    @EventHandler 
+    @EventHandler
     public void onPlayerLeftClick(PlayerAnimationEvent e) {
-    	if(e.getAnimationType().equals(PlayerAnimationType.ARM_SWING)) {
-    		for (TNTPrimed tnt: CustomTNT.getTntHandler().getPunchables()) {
-    			if (e.getPlayer().getLocation().distance(tnt.getLocation()) <= 4) {
-    				Vector toEntity = tnt.getLocation().toVector().subtract(e.getPlayer().getEyeLocation().toVector());
-    				Vector direction = e.getPlayer().getEyeLocation().getDirection();
-    				double dot = toEntity.normalize().dot(direction);
-    				if (dot > 0.9) {
-    					if (tnt.isOnGround() && direction.getY() < 0) {
-    						double y = -direction.getY();
-    	    				if (y < 0.4) {
-    	    					tnt.setVelocity(e.getPlayer().getLocation().getDirection().normalize().multiply(1).setY(0.4));
-    	    				} else {
-        						tnt.setVelocity(e.getPlayer().getLocation().getDirection().normalize().multiply(1).setY(y));
-    	    				}
-    					} else {
-        					tnt.setVelocity(e.getPlayer().getLocation().getDirection().normalize().multiply(1));
-    					}
-    				}
-    			}
-    		}
-    	}
+		if(e.getAnimationType().equals(PlayerAnimationType.ARM_SWING)) {
+			for (TNTPrimed tnt: CustomTNT.getTntHandler().getPunchables()) {
+				if (e.getPlayer().getLocation().distance(tnt.getLocation()) <= 4) {
+					Vector toEntity = tnt.getLocation().toVector().subtract(e.getPlayer().getEyeLocation().toVector());
+					Vector direction = e.getPlayer().getEyeLocation().getDirection();
+					double dot = toEntity.normalize().dot(direction);
+					if (dot > 0.9) {
+						if (tnt.isOnGround() && direction.getY() < 0) {
+							double y = -direction.getY();
+							if (y < 0.4) {
+								tnt.setVelocity(e.getPlayer().getLocation().getDirection().normalize().multiply(1).setY(0.4));
+							} else {
+								tnt.setVelocity(e.getPlayer().getLocation().getDirection().normalize().multiply(1).setY(y));
+							}
+						} else {
+							tnt.setVelocity(e.getPlayer().getLocation().getDirection().normalize().multiply(1));
+						}
+					}
+				}
+			}
+		}
     }
 
     @EventHandler 
@@ -344,7 +341,12 @@ public class TNTListener implements Listener
 
     @EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e) {
-    	e.getPlayer().discoverRecipes(CustomTNT.getNamespcedKeys());
+    	e.getPlayer().discoverRecipes(CustomTNT.getNamespacedKeys());
+	}
+
+	@EventHandler
+	public void damageTNT(EntityDamageByEntityEvent e) {
+    	System.out.println("GOT HERE");
 	}
 
 }

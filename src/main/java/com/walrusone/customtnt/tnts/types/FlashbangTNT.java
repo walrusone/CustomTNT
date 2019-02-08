@@ -1,14 +1,15 @@
 package com.walrusone.customtnt.tnts.types;
 
-import com.walrusone.customtnt.utils.Util;
 import net.minecraft.server.v1_13_R2.NBTTagCompound;
-import org.bukkit.*;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.Particle;
+import org.bukkit.Sound;
 import org.bukkit.craftbukkit.v1_13_R2.inventory.CraftItemStack;
 import org.bukkit.entity.AreaEffectCloud;
 import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
@@ -16,15 +17,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class HealingTNT extends ExplosionType {
-	
+public class FlashbangTNT extends ExplosionType {
+
 	private int duration;
 	private Particle particle;
 	private List<PotionEffect> potionEffects = new ArrayList<>();
-	
-	public HealingTNT(String name, String lore, int radius, int fuse, int duration, Particle particle, boolean throwable, boolean punchable, List<String> potions) {
+
+	public FlashbangTNT(String name, String lore, int radius, int fuse, int duration, Particle particle, boolean throwable, boolean punchable, List<String> potions) {
 		this.name = name;
-		this.permission = "customtnt.healing";
+		this.permission = "customtnt.flashbang";
 		this.lore.add(lore);
 		this.radius = radius;
 		this.fuse = fuse;
@@ -47,7 +48,7 @@ public class HealingTNT extends ExplosionType {
         NBTTagCompound comp = itemstack.getTag();
         if(comp == null)
             comp = new NBTTagCompound();
-        comp.setString("TntType", "Healing");
+        comp.setString("TntType", "Flashbang");
         itemstack.setTag(comp);
         customTnt = CraftItemStack.asBukkitCopy(itemstack);
 	}

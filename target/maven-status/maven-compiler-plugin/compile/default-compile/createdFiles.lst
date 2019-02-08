@@ -1,6 +1,7 @@
 com\walrusone\customtnt\menus\IconMenu$OptionClickEvent.class
-com\walrusone\customtnt\tnts\types\MultiTNT$1.class
+com\walrusone\customtnt\tnts\types\ConcussionTNT.class
 com\walrusone\customtnt\CustomTNT.class
+com\walrusone\customtnt\tnts\types\FlashbangTNT.class
 com\walrusone\customtnt\tnts\types\DrillTNT$1$1.class
 com\walrusone\customtnt\tnts\types\SmokeBombTNT.class
 com\walrusone\customtnt\commands\CmdManager.class
@@ -8,7 +9,6 @@ com\walrusone\customtnt\tnts\types\TimeBombTNT.class
 com\walrusone\customtnt\tnts\types\ExplosionType.class
 com\walrusone\customtnt\utils\Messaging.class
 com\walrusone\customtnt\menus\IconMenu$OptionClickEventHandler.class
-com\walrusone\customtnt\tnts\types\ChemicalTNT.class
 com\walrusone\customtnt\listeners\TNTListener$3.class
 com\walrusone\customtnt\tnts\types\DrillTNT$1.class
 com\walrusone\customtnt\utils\Messaging$MessageFormatter.class
@@ -16,7 +16,6 @@ com\walrusone\customtnt\utils\Util$1.class
 com\walrusone\customtnt\listeners\IconMenuController.class
 com\walrusone\customtnt\listeners\TNTListener$1.class
 com\walrusone\customtnt\tnts\types\SuicideTNT.class
-com\walrusone\customtnt\tnts\types\MultiTNT.class
 com\walrusone\customtnt\tnts\types\LuckyTNT.class
 com\walrusone\customtnt\tnts\TNTScheduler.class
 com\walrusone\customtnt\listeners\TNTListener.class

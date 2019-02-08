@@ -1,24 +1,18 @@
 package com.walrusone.customtnt.tnts;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
-import org.bukkit.Location;
+import com.walrusone.customtnt.tnts.types.*;
+import org.bukkit.*;
 import org.bukkit.block.Block;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.TNTPrimed;
 
 import com.walrusone.customtnt.CustomTNT;
-import com.walrusone.customtnt.tnts.types.ChemicalTNT;
-import com.walrusone.customtnt.tnts.types.DrillTNT;
-import com.walrusone.customtnt.tnts.types.ExplosionType;
-import com.walrusone.customtnt.tnts.types.HealingTNT;
-import com.walrusone.customtnt.tnts.types.LuckyTNT;
-import com.walrusone.customtnt.tnts.types.MultiTNT;
-import com.walrusone.customtnt.tnts.types.SmokeBombTNT;
-import com.walrusone.customtnt.tnts.types.SniperTNT;
-import com.walrusone.customtnt.tnts.types.SuicideTNT;
-import com.walrusone.customtnt.tnts.types.TimeBombTNT;
 import com.walrusone.customtnt.utils.Messaging;
+import org.bukkit.inventory.Recipe;
+import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.potion.PotionEffectType;
 
 public class TNTManager {
 
@@ -27,80 +21,21 @@ public class TNTManager {
 	private ArrayList<Location> luckyExplosions = new ArrayList<>();
 	private ArrayList<TNTPrimed> punchableTNTs = new ArrayList<>();
 	private HashMap<TNTType, ExplosionType> types = new HashMap<>();
+	private FileConfiguration config;
 	
 	public TNTManager() {
 		load();
 	}
 	
 	private void load() {
+		config = CustomTNT.get().getConfig();
 		types.clear();
-		types.put(TNTType.MULTI, new MultiTNT(new Messaging.MessageFormatter().format("tnt.multi.display-name"),
-				new Messaging.MessageFormatter().format("tnt.multi.lore"),
-				(float) CustomTNT.get().getConfig().getDouble("tntTypes.multi.explosionPower"), 
-				(int) (CustomTNT.get().getConfig().getDouble("tntTypes.multi.fuse") * 20), 
-				CustomTNT.get().getConfig().getInt("tntTypes.multi.numOfExplosions"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.multi.throwable"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.multi.punchable")));
-		
-		types.put(TNTType.CHEMICAL, new ChemicalTNT(new Messaging.MessageFormatter().format("tnt.chemical.display-name"),
-				new Messaging.MessageFormatter().format("tnt.chemical.lore"), 
-				CustomTNT.get().getConfig().getInt("tntTypes.chemical.effectRadius"), 
-				(int) (CustomTNT.get().getConfig().getDouble("tntTypes.chemical.fuse") * 20), 
-				CustomTNT.get().getConfig().getInt("tntTypes.chemical.effectDuration"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.chemical.throwable"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.chemical.punchable")));
-		
-		types.put(TNTType.SMOKEBOMB, new SmokeBombTNT(new Messaging.MessageFormatter().format("tnt.smokebomb.display-name"),
-				new Messaging.MessageFormatter().format("tnt.smokebomb.lore"), 
-				CustomTNT.get().getConfig().getInt("tntTypes.smokebomb.effectRadius"), 
-				(int) (CustomTNT.get().getConfig().getDouble("tntTypes.smokebomb.fuse") * 20), 
-				CustomTNT.get().getConfig().getInt("tntTypes.smokebomb.effectDuration"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.smokebomb.throwable"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.smokebomb.punchable")));
-		
-		types.put(TNTType.SNIPER, new SniperTNT(new Messaging.MessageFormatter().format("tnt.sniper.display-name"),
-				new Messaging.MessageFormatter().format("tnt.sniper.lore"), 
-				(float) CustomTNT.get().getConfig().getDouble("tntTypes.sniper.explosionPower"), 
-				(int) (CustomTNT.get().getConfig().getDouble("tntTypes.sniper.fuse") * 20),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.sniper.throwable"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.sniper.punchable")));
-		
-		types.put(TNTType.DRILL, new DrillTNT(new Messaging.MessageFormatter().format("tnt.drill.display-name"),
-				new Messaging.MessageFormatter().format("tnt.drill.lore"), 5, 
-				(int) (CustomTNT.get().getConfig().getDouble("tntTypes.drill.fuse") * 20), 
-				CustomTNT.get().getConfig().getInt("tntTypes.drill.depth"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.drill.throwable"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.drill.punchable")));
-		
-		types.put(TNTType.TIMEBOMB, new TimeBombTNT(new Messaging.MessageFormatter().format("tnt.timebomb.display-name"),
-				new Messaging.MessageFormatter().format("tnt.timebomb.lore"), 
-				(float) CustomTNT.get().getConfig().getDouble("tntTypes.timebomb.explosionPower"), 
-				5,
-				false,
-				CustomTNT.get().getConfig().getBoolean("tntTypes.timebomb.punchable")));
-		
-		types.put(TNTType.HEALING, new HealingTNT(new Messaging.MessageFormatter().format("tnt.healing.display-name"),
-				new Messaging.MessageFormatter().format("tnt.healing.lore"), 
-				CustomTNT.get().getConfig().getInt("tntTypes.healing.effectRadius"), 
-				(int) (CustomTNT.get().getConfig().getDouble("tntTypes.healing.fuse") * 20), 
-				CustomTNT.get().getConfig().getInt("tntTypes.healing.healingAmount"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.healing.throwable"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.healing.punchable")));
-		
-		types.put(TNTType.LUCKY, new LuckyTNT(new Messaging.MessageFormatter().format("tnt.lucky.display-name"),
-				new Messaging.MessageFormatter().format("tnt.lucky.lore"), 
-				CustomTNT.get().getConfig().getInt("tntTypes.lucky.explosionPower"), 
-				(int) (CustomTNT.get().getConfig().getDouble("tntTypes.lucky.fuse") * 20), 
-				CustomTNT.get().getConfig().getInt("tntTypes.lucky.chanceOfSpawnerDrop"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.lucky.throwable"),
-				CustomTNT.get().getConfig().getBoolean("tntTypes.lucky.punchable")));
-		
-		types.put(TNTType.SUICIDE, new SuicideTNT(new Messaging.MessageFormatter().format("tnt.suicide.display-name"),
-				new Messaging.MessageFormatter().format("tnt.suicide.lore"), 
-				CustomTNT.get().getConfig().getInt("tntTypes.suicide.explosionPower"), 
-				3, 
-				true,
-				false));
+		for (String key: config.getConfigurationSection("tntTypes").getKeys(false)) {
+			types.put(TNTType.valueOf(key.toUpperCase()), getTNT(key));
+			if (config.getBoolean("tntTypes." + key + ".enableCrafting")) {
+				addRecipe(key);
+			}
+		}
 	}
 	
 	public ArrayList<Block> getTNTBlocks() {
@@ -116,21 +51,102 @@ public class TNTManager {
 	}
 	
 	public enum TNTType {
-		MULTI,
 		SNIPER,
 		DRILL,
-		CHEMICAL,
 		TIMEBOMB,
 		SMOKEBOMB,
 		HEALING,
 		LUCKY,
-		SUICIDE
+		SUICIDE,
+		CONCUSSION,
+		FLASHBANG
 	}
 	
 	public ExplosionType getExplosionType(TNTType type) {
 		return types.get(type);
 	}
 
+	private ExplosionType getTNT(String key) {
+		switch (key) {
+			case "smokebomb": return new SmokeBombTNT(getDisplayName(key), getLore(key), getRadius(key), getFuse(key), getDuration(key), getThrowable(key), getPunchable(key));
+			case "sniper": return new SniperTNT(getDisplayName(key), getLore(key), getExplosionPower(key), getFuse(key), getThrowable(key), getPunchable(key));
+			case "drill": return new DrillTNT(getDisplayName(key), getLore(key), getFuse(key), getDepth(key), getThrowable(key), getPunchable(key));
+			case "timebomb": return new TimeBombTNT(getDisplayName(key), getLore(key), getExplosionPower(key), 5, false, getPunchable(key));
+			case "lucky": return new LuckyTNT(getDisplayName(key), getLore(key), getExplosionPower(key), getFuse(key), getDropChance(key), getThrowable(key), getPunchable(key));
+			case "suicide": return new SuicideTNT(getDisplayName(key), getLore(key), getExplosionPower(key), 3, true, false);
+			case "healing": return new HealingTNT(getDisplayName(key), getLore(key), getRadius(key), getFuse(key), getDuration(key), getParticle(key), getThrowable(key), getPunchable(key), getPotionEffects(key));
+			case "concussion": return new ConcussionTNT(getDisplayName(key), getLore(key), getRadius(key), getFuse(key), getDuration(key), getParticle(key), getThrowable(key), getPunchable(key), getPotionEffects(key));
+			case "flashbang": return new FlashbangTNT(getDisplayName(key), getLore(key), getRadius(key), getFuse(key), getDuration(key), getParticle(key), getThrowable(key), getPunchable(key), getPotionEffects(key));
+			default: return null;
+		}
+	}
+
+	private String getDisplayName(String key) {
+		return new Messaging.MessageFormatter().format("tnt." + key + ".display-name");
+	}
+
+	private String getLore(String key) {
+		return new Messaging.MessageFormatter().format("tnt." + key + ".lore");
+	}
+
+	private int getRadius(String key) {
+		return config.getInt("tntTypes." + key + ".particleRadius");
+	}
+
+	private int getDuration(String key) {
+		return config.getInt("tntTypes." + key + ".particleDuration") * 20;
+	}
+
+	private int getFuse(String key) {
+		return (int) (config.getDouble("tntTypes." + key + ".fuse") * 20);
+	}
+
+	private boolean getThrowable(String key) {
+		return config.getBoolean("tntTypes." + key + ".throwable");
+	}
+
+	private boolean getPunchable(String key) {
+		return config.getBoolean("tntTypes." + key + ".punchable");
+	}
+
+	private int getExplosionPower(String key) {
+		return config.getInt("tntTypes." + key + ".explosionPower");
+	}
+
+	private int getDepth(String key) {
+		return config.getInt("tntTypes." + key + ".depth");
+	}
+
+	private int getDropChance(String key) {
+		return config.getInt("tntTypes." + key + ".chanceOfSpawnerDrop");
+	}
+
+	private Particle getParticle(String key) {
+		return Particle.valueOf(config.getString("tntTypes." + key + ".particleType"));
+	}
+
+	private List<String> getPotionEffects(String key) {
+		return config.getStringList("tntTypes." + key + ".effectTypes");
+	}
+
+	private void addRecipe(String key) {
+		NamespacedKey nKey = new NamespacedKey(CustomTNT.get(), key);
+		CustomTNT.getNamespacedKeys().add(nKey);
+		ShapedRecipe recipe = new ShapedRecipe(nKey, this.getExplosionType(TNTManager.TNTType.valueOf(key.toUpperCase())).getItem());
+		recipe.shape("ABC", "DEF", "GHI");
+		List<String> slots = Arrays.asList("A", "B", "C", "D", "E", "F", "G", "H", "I") ;
+		List<String> items = Arrays.asList(config.getString("tntTypes." + key + ".recipe").split(":"));
+		for (int i = 0; i < 9; i++) {
+			recipe.setIngredient(slots.get(i).charAt(0), Material.valueOf(items.get(i)));
+		}
+		for (Iterator<Recipe> iter = Bukkit.recipeIterator(); iter.hasNext();) {
+			Recipe rep = iter.next();
+			if (rep.getResult().equals(this.getExplosionType(TNTManager.TNTType.valueOf(key.toUpperCase())).getItem())) {
+				iter.remove();
+			}
+		}
+		Bukkit.addRecipe(recipe);
+	}
 }
 
 

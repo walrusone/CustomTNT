@@ -6,18 +6,12 @@ error:
   cannot-pickup: '&4You do not have permission to pick up this TNT!'
   tnt-no-perm: '&4You do not have permission to use this type of TNT!'
 tnt:
-  multi:
-    display-name: '&aMulti TNT'
-    lore: '&eThree explosions in on TNT'
   sniper:
     display-name: '&aSniper TNT'
     lore: '&eA small percise explosion that does double the damage'
   drill:
     display-name: '&aDrill TNT'
     lore: '&eDrills a 5 radius hole in the ground'
-  chemical:
-    display-name: '&aChemical TNT'
-    lore: '&eA throwable tnt that causes nausea'
   smokebomb:
     display-name: '&aSmokeBomb TNT'
     lore: '&eA throwable tnt that causes blindness and confusion'
@@ -28,10 +22,16 @@ tnt:
     menu-time-color: '&b{length}'
   healing:
     display-name: '&aHealing TNT'
-    lore: '&eA tnt that restores players health'
+    lore: '&eA tnt that gives regeneration and 2 absorption hearts'
   lucky:
     display-name: '&aLucky TNT'
     lore: '&eMob spawners blown up with this TNT have a chance to drop'
   suicide:
     display-name: '&aSuicide TNT'
     lore: '&eBlows up immediately on right click'
+  concussion:
+    display-name: '&aConcussion TNT'
+    lore: '&eA tnt that causes confusion and slowness'
+  flashbang:
+    display-name: '&aFlashbang TNT'
+    lore: '&eA tnt that causes blindness and slowness'

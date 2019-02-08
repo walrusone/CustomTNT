@@ -6,28 +6,38 @@ import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.craftbukkit.v1_13_R2.inventory.CraftItemStack;
-import org.bukkit.entity.Player;
+import org.bukkit.entity.AreaEffectCloud;
+import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-import org.bukkit.util.Vector;
 
-import com.walrusone.customtnt.utils.Util;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class ChemicalTNT extends ExplosionType {
-	
+public class ConcussionTNT extends ExplosionType {
+
 	private int duration;
-	
-	public ChemicalTNT(String name, String lore, int radius, int fuse, int duration, boolean throwable, boolean punchable) {
+	private Particle particle;
+	private List<PotionEffect> potionEffects = new ArrayList<>();
+
+	public ConcussionTNT(String name, String lore, int radius, int fuse, int duration, Particle particle, boolean throwable, boolean punchable, List<String> potions) {
 		this.name = name;
-		this.permission = "customtnt.chemical";
+		this.permission = "customtnt.concussion";
 		this.lore.add(lore);
 		this.radius = radius;
 		this.fuse = fuse;
 		this.duration = duration;
 		this.throwable = throwable;
 		this.punchable = punchable;
+		this.particle = particle;
+
+		for (String pot: potions) {
+			List<String> potParts = Arrays.asList(pot.split(":"));
+			potionEffects.add(new PotionEffect(PotionEffectType.getByName(potParts.get(0)), Integer.valueOf(potParts.get(1)) * 20, Integer.valueOf(potParts.get(2)), true, true, true));
+		}
 		
 		customTnt = new ItemStack(Material.TNT, 1);
 		ItemMeta itemMeta = customTnt.getItemMeta();
@@ -38,7 +48,7 @@ public class ChemicalTNT extends ExplosionType {
         NBTTagCompound comp = itemstack.getTag();
         if(comp == null)
             comp = new NBTTagCompound();
-        comp.setString("TntType", "Chemical");
+        comp.setString("TntType", "Concussion");
         itemstack.setTag(comp);
         customTnt = CraftItemStack.asBukkitCopy(itemstack);
 	}
@@ -46,15 +56,19 @@ public class ChemicalTNT extends ExplosionType {
 	@Override
 	public void onExplode(final Location location) {
 		location.getWorld().playSound(location, Sound.ENTITY_GENERIC_EXPLODE, 1, 1);
-		Util.get().surroundParticles(location, (int) radius, Particle.SLIME);
-		Util.get().surroundParticles(location, 1, Particle.FLAME);
-		for (Player player: location.getWorld().getPlayers()) {
-			if (location.distance(player.getLocation()) < radius) {
-				Vector vector = player.getLocation().toVector().subtract(location.toVector());
-				player.setVelocity(vector.multiply(.4).setY(.25));
-				player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, duration * 20, 1));
-			}
+		for (int i = 0; i < 3; i++) {
+			doEffectCould(location, i);
 		}
+	}
+
+	private void doEffectCould(Location location, int y) {
+		AreaEffectCloud aef =(AreaEffectCloud) location.getWorld().spawnEntity(location.add(0, y, 0), EntityType.AREA_EFFECT_CLOUD);
+		for (PotionEffect pe: potionEffects) {
+			aef.addCustomEffect(pe, true);
+		}
+		aef.setParticle(particle);
+		aef.setRadius(radius);
+		aef.setDuration(duration);
 	}
 
 }
