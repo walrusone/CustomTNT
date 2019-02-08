@@ -2,6 +2,7 @@ package com.walrusone.customtnt.menus;
 
 import java.util.List;
 
+import com.walrusone.customtnt.tnts.TNTManager;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -36,6 +37,9 @@ public class TimebombMenu {
                     block.setType(Material.AIR);
                     Location loc = new Location(block.getWorld(), block.getX(), block.getY(), block.getZ());
                     TNTPrimed tnt = player.getWorld().spawn(loc, TNTPrimed.class);
+                    if(CustomTNT.getTntHandler().getExplosionType(TNTManager.TNTType.TIMEBOMB).isPunchable()) {
+                        CustomTNT.getTntHandler().getPunchables().add(tnt);
+                    }
                 tnt.setFuseTicks(fuse * 20);
                 }
         });

@@ -1,5 +1,9 @@
 package com.walrusone.customtnt;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.walrusone.customtnt.commands.CmdManager;
@@ -9,6 +13,9 @@ import com.walrusone.customtnt.tnts.TNTManager;
 import com.walrusone.customtnt.tnts.TNTScheduler;
 import com.walrusone.customtnt.utils.Messaging;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class CustomTNT extends JavaPlugin {
 
@@ -16,6 +23,7 @@ public class CustomTNT extends JavaPlugin {
 	private Messaging messaging;
 	private static TNTManager tntHandler;
 	private IconMenuController ic;
+	private static List<NamespacedKey> namespacedKeys = new ArrayList<>();
 	
 	public void onEnable() {
     	instance = this;
@@ -31,9 +39,19 @@ public class CustomTNT extends JavaPlugin {
         this.getServer().getPluginManager().registerEvents(ic, this);
         this.getServer().getPluginManager().registerEvents(new TNTListener(), this);
         getCommand("customtnt").setExecutor(new CmdManager());
+        addRecipes();
 	}
-	
-	public void onDisable() {
+
+    private void addRecipes() {
+        NamespacedKey timebombkey = new NamespacedKey(this, "timebomb");
+        namespacedKeys.add(timebombkey);
+        ShapelessRecipe timebombrecipe = new ShapelessRecipe(timebombkey, CustomTNT.getTntHandler().getExplosionType(TNTManager.TNTType.TIMEBOMB).getItem());
+        timebombrecipe.addIngredient(Material.CLOCK);
+        timebombrecipe.addIngredient(Material.TNT);
+        Bukkit.addRecipe(timebombrecipe);
+    }
+
+    public void onDisable() {
         this.getServer().getScheduler().cancelTasks(this);
         messaging = null;
         tntHandler = null;
@@ -61,5 +79,8 @@ public class CustomTNT extends JavaPlugin {
     public static IconMenuController getIC() {
     	return instance.ic;
     }
-    
+
+    public static List<NamespacedKey> getNamespcedKeys() {
+	    return namespacedKeys;
+    }
 }

@@ -11,10 +11,10 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.CreatureSpawner;
-import org.bukkit.entity.Creature;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.entity.EntityPickupItemEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.meta.BlockStateMeta;
 import org.bukkit.material.Dispenser;
 import org.bukkit.entity.TNTPrimed;
@@ -341,5 +341,10 @@ public class TNTListener implements Listener
 			}
 		}
     }
+
+    @EventHandler
+	public void onPlayerJoin(PlayerJoinEvent e) {
+    	e.getPlayer().discoverRecipes(CustomTNT.getNamespcedKeys());
+	}
 
 }
