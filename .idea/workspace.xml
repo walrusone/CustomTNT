@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067cedd4-508d-4c75-b842-6fdd028cb622" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/CustomTNT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/CustomTNT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/GiveCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/GiveCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/listeners/TNTListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/listeners/TNTListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/menus/TimebombMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/menus/TimebombMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ChemicalTNT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ConcussionTNT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/DrillTNT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/DrillTNT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ExplosionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ExplosionType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/MultiTNT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SmokeBombTNT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SmokeBombTNT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SniperTNT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SniperTNT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomTNT-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomTNT-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/CustomTNT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/CustomTNT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/commands/GiveCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/commands/GiveCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/menus/TimebombMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/menus/TimebombMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/TNTManager$TNTType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/TNTManager$TNTType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/TNTManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/TNTManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/ChemicalTNT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/DrillTNT$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/DrillTNT$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/DrillTNT$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/DrillTNT$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/DrillTNT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/DrillTNT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/ExplosionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/ExplosionType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/HealingTNT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/HealingTNT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/MultiTNT$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/MultiTNT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/SmokeBombTNT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/SmokeBombTNT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/SniperTNT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/SniperTNT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,65 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1119">
-              <caret line="148" selection-start-line="148" selection-end-line="148" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ConcussionTNT.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="38" column="163" lean-forward="true" selection-start-line="38" selection-start-column="163" selection-end-line="38" selection-end-column="163" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/GiveCmd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -161,12 +68,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/listeners/TNTListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ConsussionTNT.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/DrillTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/GiveCmd.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ConcussionTNT.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java" />
       </list>
     </option>
   </component>
@@ -192,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,17 +129,19 @@
               <item name="CustomTNT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="customtnt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549652997997" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549655846870" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SkyWarsReloaded" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -273,7 +181,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -282,7 +190,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,7 +202,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49520767" visible="true" weight="0.3251599" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49520767" weight="0.3251599" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" order="7" sideWeight="0.50479233" side_tool="true" weight="0.3251599" />
@@ -546,10 +454,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1119">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="1190">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -563,23 +471,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="2006">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
