@@ -57,12 +57,40 @@
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots</url>
         </repository>
+        <repository>
+            <id>worldedit-core</id>
+            <url>http://maven.sk89q.com/repo/</url>
+        </repository>
     </repositories>
 <dependencies>
     <dependency>
         <groupId>org.spigotmc</groupId>
         <artifactId>spigot</artifactId>
         <version>1.13.2-R0.1-SNAPSHOT</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.sk89q.worldguard</groupId>
+        <artifactId>worldguard-core</artifactId>
+        <version>LATEST</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.sk89q.worldguard</groupId>
+        <artifactId>worldguard-legacy</artifactId>
+        <version>LATEST</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.sk89q.worldedit</groupId>
+        <artifactId>worldedit-core</artifactId>
+        <version>LATEST</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.sk89q.worldedit</groupId>
+        <artifactId>worldedit-bukkit</artifactId>
+        <version>LATEST</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>

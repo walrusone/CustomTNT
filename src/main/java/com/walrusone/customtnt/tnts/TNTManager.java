@@ -12,7 +12,6 @@ import com.walrusone.customtnt.CustomTNT;
 import com.walrusone.customtnt.utils.Messaging;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
-import org.bukkit.potion.PotionEffectType;
 
 public class TNTManager {
 
@@ -50,9 +49,9 @@ public class TNTManager {
 		return punchableTNTs;
 	}
 	
+	@SuppressWarnings("unused")
 	public enum TNTType {
 		SNIPER,
-		DRILL,
 		TIMEBOMB,
 		SMOKEBOMB,
 		HEALING,
@@ -70,7 +69,6 @@ public class TNTManager {
 		switch (key) {
 			case "smokebomb": return new SmokeBombTNT(getDisplayName(key), getLore(key), getRadius(key), getFuse(key), getDuration(key), getThrowable(key), getPunchable(key));
 			case "sniper": return new SniperTNT(getDisplayName(key), getLore(key), getExplosionPower(key), getFuse(key), getThrowable(key), getPunchable(key));
-			case "drill": return new DrillTNT(getDisplayName(key), getLore(key), getFuse(key), getDepth(key), getThrowable(key), getPunchable(key));
 			case "timebomb": return new TimeBombTNT(getDisplayName(key), getLore(key), getExplosionPower(key), 5, false, getPunchable(key));
 			case "lucky": return new LuckyTNT(getDisplayName(key), getLore(key), getExplosionPower(key), getFuse(key), getDropChance(key), getThrowable(key), getPunchable(key));
 			case "suicide": return new SuicideTNT(getDisplayName(key), getLore(key), getExplosionPower(key), 3, true, false);
@@ -113,10 +111,6 @@ public class TNTManager {
 		return config.getInt("tntTypes." + key + ".explosionPower");
 	}
 
-	private int getDepth(String key) {
-		return config.getInt("tntTypes." + key + ".depth");
-	}
-
 	private int getDropChance(String key) {
 		return config.getInt("tntTypes." + key + ".chanceOfSpawnerDrop");
 	}
@@ -146,6 +140,10 @@ public class TNTManager {
 			}
 		}
 		Bukkit.addRecipe(recipe);
+	}
+
+	public Set<TNTType> getTypes() {
+		return types.keySet();
 	}
 }
 

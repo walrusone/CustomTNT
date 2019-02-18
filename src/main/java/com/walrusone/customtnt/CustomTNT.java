@@ -1,9 +1,6 @@
 package com.walrusone.customtnt;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
-import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.walrusone.customtnt.commands.CmdManager;

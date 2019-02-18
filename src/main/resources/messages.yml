@@ -5,13 +5,11 @@ error:
   player-not-found: '&4That player does not exist!'
   cannot-pickup: '&4You do not have permission to pick up this TNT!'
   tnt-no-perm: '&4You do not have permission to use this type of TNT!'
+  tnt-no-place: '&4TNT can not be placed in this area!'
 tnt:
   sniper:
     display-name: '&aSniper TNT'
     lore: '&eA small percise explosion that does double the damage'
-  drill:
-    display-name: '&aDrill TNT'
-    lore: '&eDrills a 5 radius hole in the ground'
   smokebomb:
     display-name: '&aSmokeBomb TNT'
     lore: '&eA throwable tnt that causes blindness and confusion'

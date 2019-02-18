@@ -7,8 +7,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.TNTPrimed;
 import org.bukkit.inventory.ItemStack;
@@ -17,6 +15,7 @@ import com.google.common.collect.Lists;
 import com.walrusone.customtnt.CustomTNT;
 import com.walrusone.customtnt.utils.Messaging;
 
+@SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
 public class TimebombMenu {
 
     private static final int menuSlotsPerRow = 9;

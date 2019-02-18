@@ -6,13 +6,6 @@ tntTypes:
     punchable: false
     enableCrafting: true
     recipe: AIR:BOW:AIR:BOW:TNT:BOW:AIR:BOW:AIR
-  drill:
-    depth: 20
-    fuse: 4
-    throwable: false
-    punchable: false
-    enableCrafting: true
-    recipe: AIR:DIAMOND_PICKAXE:AIR:AIR:TNT:AIR:AIR:AIR:AIR
   timebomb:
     explosionPower: 4
     option1: 2

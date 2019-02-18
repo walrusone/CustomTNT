@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.UUID;
 
+import com.walrusone.customtnt.utils.Util;
 import org.bukkit.ChatColor;
 import org.bukkit.block.BlockState;
 import org.bukkit.craftbukkit.v1_13_R2.inventory.CraftItemStack;
@@ -13,7 +14,7 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.block.CreatureSpawner;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
+
 import org.bukkit.event.entity.EntityPickupItemEvent;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.meta.BlockStateMeta;
@@ -81,13 +82,7 @@ public class TNTListener implements Listener
 				event.setCancelled(true);
 				final String tntType = primedTNT.getMetadata("TNTType").get(0).asString();
 				final TNTType type = TNTType.valueOf(tntType.toUpperCase());
-				if (primedTNT.hasMetadata("Owner")) {
-					new BukkitRunnable() {
-						public void run() {
-							CustomTNT.getTntHandler().getExplosionType(type).onExplode(event.getEntity().getLocation());
-						}
-					}.runTask(CustomTNT.get());
-				} else {
+				if (Util.get().allowExplosion(primedTNT.getLocation())) {
 					new BukkitRunnable() {
 						public void run() {
 							CustomTNT.getTntHandler().getExplosionType(type).onExplode(event.getEntity().getLocation());
@@ -167,16 +162,21 @@ public class TNTListener implements Listener
         if (e.getItemInHand().getType() == Material.TNT) {
 			net.minecraft.server.v1_13_R2.ItemStack itemstack = CraftItemStack.asNMSCopy(e.getItemInHand());
         	 if (itemstack.getTag() != null && itemstack.getTag().hasKey("TntType")) {
-        		String type = itemstack.getTag().getString("TntType");
-        		if(e.getPlayer().hasPermission(CustomTNT.getTntHandler().getExplosionType(TNTType.valueOf(type.toUpperCase())).getPermission())) {
-                	final Block block = e.getBlockPlaced();
-                    block.setMetadata("TNTType", new FixedMetadataValue(CustomTNT.get(), type));
-                    block.setMetadata("Owner", new FixedMetadataValue(CustomTNT.get(), e.getPlayer().getUniqueId().toString()));
-                    CustomTNT.getTntHandler().getTNTBlocks().add(block);
-        		} else {
-        			e.setCancelled(true);
-        			e.getPlayer().sendMessage(new Messaging.MessageFormatter().format("error.tnt-no-perm"));
-        		}
+        	 	if (Util.get().allowPlacement(e.getBlockPlaced().getLocation(), e.getPlayer())) {
+					String type = itemstack.getTag().getString("TntType");
+					if(e.getPlayer().hasPermission(CustomTNT.getTntHandler().getExplosionType(TNTType.valueOf(type.toUpperCase())).getPermission())) {
+						final Block block = e.getBlockPlaced();
+						block.setMetadata("TNTType", new FixedMetadataValue(CustomTNT.get(), type));
+						block.setMetadata("Owner", new FixedMetadataValue(CustomTNT.get(), e.getPlayer().getUniqueId().toString()));
+						CustomTNT.getTntHandler().getTNTBlocks().add(block);
+					} else {
+						e.setCancelled(true);
+						e.getPlayer().sendMessage(new Messaging.MessageFormatter().format("error.tnt-no-perm"));
+					}
+				} else {
+					e.setCancelled(true);
+					e.getPlayer().sendMessage(new Messaging.MessageFormatter().format("error.tnt-no-place"));
+				}
         	}
         }
     }
@@ -273,7 +273,6 @@ public class TNTListener implements Listener
                     	e.getPlayer().sendMessage(new Messaging.MessageFormatter().format("error.tnt-no-perm"));
                 	}
                 }
-        		
             }
         }
     }
@@ -342,11 +341,6 @@ public class TNTListener implements Listener
     @EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e) {
     	e.getPlayer().discoverRecipes(CustomTNT.getNamespacedKeys());
-	}
-
-	@EventHandler
-	public void damageTNT(EntityDamageByEntityEvent e) {
-    	System.out.println("GOT HERE");
 	}
 
 }

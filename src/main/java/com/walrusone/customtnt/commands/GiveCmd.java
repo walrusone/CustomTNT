@@ -1,8 +1,5 @@
 package com.walrusone.customtnt.commands;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -14,20 +11,11 @@ import com.walrusone.customtnt.tnts.types.ExplosionType;
 import com.walrusone.customtnt.utils.Messaging;
 import com.walrusone.customtnt.utils.Util;
 
+import java.util.Iterator;
+
 public class GiveCmd extends BaseCmd { 
-	private List<String> types = new ArrayList<>();
-	
+
 	GiveCmd() {
-		types.add("sniper");
-		types.add("drill");
-		types.add("timebomb");
-		types.add("smokebomb");
-		types.add("healing");
-		types.add("lucky");
-		types.add("suicide");
-		types.add("concussion");
-		types.add("flashbang");
-		
 		forcePlayer = false;
 		cmdName = "give";
 		argLength = 3; //counting cmdName
@@ -48,7 +36,7 @@ public class GiveCmd extends BaseCmd {
             return true; 
    	 	}
    	 	
-   	 	if (types.contains(args[2])) {
+   	 	if (validType(args[2])) {
    	 		TNTType type = TNTType.valueOf(args[2].toUpperCase());
    	 		int amt = 1;
 			if (args.length > 3) {
@@ -63,10 +51,32 @@ public class GiveCmd extends BaseCmd {
 			invitee.getInventory().addItem(tnt);
 			return true;
    	 	} else {
-   	 		sender.sendMessage(ChatColor.RED + "TNTType must be either: multi, sniper, timebomb, drill, lucky, healing, chemical, suicide, or smokebomb");
+   	 		sender.sendMessage(ChatColor.RED + "TNTType must be either: " + getTypesString());
    	 		return true;
    	 	}
-		
+	}
+
+	private boolean validType(String type) {
+		for (TNTType tntType: CustomTNT.getTntHandler().getTypes()) {
+			if (tntType.toString().equalsIgnoreCase(type)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private String getTypesString() {
+		StringBuilder types = new StringBuilder();
+		Iterator iter = CustomTNT.getTntHandler().getTypes().iterator();
+		while(iter.hasNext()) {
+			TNTType type = (TNTType) iter.next();
+			if (iter.hasNext()) {
+				types.append(type.toString().toLowerCase()).append(", ");
+			} else {
+				types.append("or ").append(type.toString().toLowerCase());
+			}
+		}
+		return types.toString();
 	}
 
 }

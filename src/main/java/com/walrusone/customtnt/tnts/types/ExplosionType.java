@@ -14,7 +14,7 @@ public abstract class ExplosionType {
 	protected List<String> lore = new ArrayList<>();
 	protected float radius;
 	protected int fuse;
-	protected ItemStack customTnt;
+	ItemStack customTnt;
 	protected boolean throwable;
 	protected boolean punchable;
 	
@@ -27,11 +27,7 @@ public abstract class ExplosionType {
 	public List<String> getLore() {
 		return lore;
 	}
-	
-	public float getRadius() {
-		return radius;
-	}
-	
+
 	public int getFuse() {
 		return fuse;
 	}

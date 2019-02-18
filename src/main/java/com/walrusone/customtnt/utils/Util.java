@@ -4,11 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.sk89q.worldedit.bukkit.BukkitAdapter;
+import com.sk89q.worldedit.math.BlockVector3;
+import com.sk89q.worldguard.WorldGuard;
+import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
+import com.sk89q.worldguard.protection.ApplicableRegionSet;
+import com.sk89q.worldguard.protection.DelayedRegionOverlapAssociation;
+import com.sk89q.worldguard.protection.flags.Flags;
+import com.sk89q.worldguard.protection.flags.StateFlag;
+import com.sk89q.worldguard.protection.managers.RegionManager;
+import com.sk89q.worldguard.protection.regions.RegionContainer;
+import com.sk89q.worldguard.protection.regions.RegionQuery;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -112,6 +124,20 @@ public class Util {
 
         itemStack.setItemMeta(itemMeta);
         return itemStack;
+    }
+
+    public boolean allowPlacement(Location loc, Player player ) {
+        WorldGuardPlugin wg = (WorldGuardPlugin) CustomTNT.get().getServer().getPluginManager().getPlugin("WorldGuard");
+        RegionContainer container = WorldGuard.getInstance().getPlatform().getRegionContainer();
+        RegionQuery query = container.createQuery();
+        return query.testState(BukkitAdapter.adapt(loc), wg.wrapPlayer(player), Flags.TNT);
+    }
+
+    public boolean allowExplosion(Location loc) {
+        WorldGuardPlugin wg = (WorldGuardPlugin) CustomTNT.get().getServer().getPluginManager().getPlugin("WorldGuard");
+        RegionContainer container = WorldGuard.getInstance().getPlatform().getRegionContainer();
+        RegionQuery query = container.createQuery();
+        return query.testState(BukkitAdapter.adapt(loc), new DelayedRegionOverlapAssociation(query, BukkitAdapter.adapt(loc)), Flags.TNT);
     }
 
 }
