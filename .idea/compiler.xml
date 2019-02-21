@@ -6,11 +6,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CustomTNT" />
+        <module name="customtnt-nms-interfaces" />
+        <module name="customtnt-nms-v1_10_r1" />
+        <module name="customtnt-nms-v1_11_r1" />
+        <module name="customtnt-nms-v1_12_r1" />
+        <module name="customtnt-nms-v1_13_r2" />
+        <module name="customtnt-nms-v1_8_r2" />
+        <module name="customtnt-nms-v1_8_r3" />
+        <module name="customtnt-nms-v1_9_r1" />
+        <module name="customtnt-nms-v1_9_r2" />
+        <module name="customtnt-plugin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CustomTNT" target="1.8" />
+      <module name="customtnt-nms" target="1.8" />
+      <module name="customtnt-nms-aggregated" target="1.8" />
+      <module name="customtnt-nms-interfaces" target="1.8" />
+      <module name="customtnt-nms-v1_10_r1" target="1.8" />
+      <module name="customtnt-nms-v1_11_r1" target="1.8" />
+      <module name="customtnt-nms-v1_12_r1" target="1.8" />
+      <module name="customtnt-nms-v1_13_r2" target="1.8" />
+      <module name="customtnt-nms-v1_8_r2" target="1.8" />
+      <module name="customtnt-nms-v1_8_r3" target="1.8" />
+      <module name="customtnt-nms-v1_9_r1" target="1.8" />
+      <module name="customtnt-nms-v1_9_r2" target="1.8" />
+      <module name="customtnt-parent" target="1.8" />
+      <module name="customtnt-plugin" target="1.8" />
+      <module name="v1_11_R1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

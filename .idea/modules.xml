@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CustomTNT.iml" filepath="$PROJECT_DIR$/CustomTNT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/customtnt-nms.iml" filepath="$PROJECT_DIR$/nms/customtnt-nms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/aggregated/customtnt-nms-aggregated.iml" filepath="$PROJECT_DIR$/nms/aggregated/customtnt-nms-aggregated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/interfaces/customtnt-nms-interfaces.iml" filepath="$PROJECT_DIR$/nms/interfaces/customtnt-nms-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_10_R1/customtnt-nms-v1_10_r1.iml" filepath="$PROJECT_DIR$/nms/v1_10_R1/customtnt-nms-v1_10_r1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_11_R1/customtnt-nms-v1_11_r1.iml" filepath="$PROJECT_DIR$/nms/v1_11_R1/customtnt-nms-v1_11_r1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_12_R1/customtnt-nms-v1_12_r1.iml" filepath="$PROJECT_DIR$/nms/v1_12_R1/customtnt-nms-v1_12_r1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_13_R2/customtnt-nms-v1_13_r2.iml" filepath="$PROJECT_DIR$/nms/v1_13_R2/customtnt-nms-v1_13_r2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_8_R2/customtnt-nms-v1_8_r2.iml" filepath="$PROJECT_DIR$/nms/v1_8_R2/customtnt-nms-v1_8_r2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_8_R3/customtnt-nms-v1_8_r3.iml" filepath="$PROJECT_DIR$/nms/v1_8_R3/customtnt-nms-v1_8_r3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_9_R1/customtnt-nms-v1_9_r1.iml" filepath="$PROJECT_DIR$/nms/v1_9_R1/customtnt-nms-v1_9_r1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_9_R2/customtnt-nms-v1_9_r2.iml" filepath="$PROJECT_DIR$/nms/v1_9_R2/customtnt-nms-v1_9_r2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customtnt-parent.iml" filepath="$PROJECT_DIR$/customtnt-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin/customtnt-plugin.iml" filepath="$PROJECT_DIR$/plugin/customtnt-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nms/v1_11_R1.iml" filepath="$PROJECT_DIR$/nms/v1_11_R1.iml" />
     </modules>
   </component>
 </project>

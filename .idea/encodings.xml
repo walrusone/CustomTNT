@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/aggregated" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/interfaces" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/v1_10_R1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/v1_11_R1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/v1_12_R1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/v1_13_R2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/v1_8_R2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/v1_8_R3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/v1_9_R1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nms/v1_9_R2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plugin" charset="UTF-8" />
+  </component>
 </project>

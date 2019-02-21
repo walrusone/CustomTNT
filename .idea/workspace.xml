@@ -2,9 +2,227 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067cedd4-508d-4c75-b842-6fdd028cb622" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_10_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_17_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldedit_6_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldguard_6_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_8_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_avaje_ebean_2_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_craftbukkit_1_10_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_1_10_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_1_8_3_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_1_9_4_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_8_8_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/aggregated/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/aggregated/customtnt-nms-aggregated.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/aggregated/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/customtnt-nms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/customtnt-nms-interfaces.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/src/main/java/com/walrusone/customtnt/api/NMS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/src/main/main2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/interfaces/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_10_R1/customtnt-nms-v1_10_r1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_10_R1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_10_R1/src/main/java/com/walrusone/customtnt/nms/v1_10_R1/NMSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_10_R1/src/main/main10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_10_R1/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_10_R1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_10_R1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_11_R1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_11_R1/src/main/java/com/walrusone/customtnt/nms/v1_11_R1/NMSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_11_R1/src/main/main10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_11_R1/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_11_R1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_11_R1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_12_R1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_12_R1/src/main/java/com/walrusone/customtnt/nms/v1_12_R1/NMSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_12_R1/src/main/main10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_12_R1/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_12_R1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_12_R1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/customtnt-nms-v1_13_r2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/src/main/java/com/walrusone/customtnt/nms/v1_13_R2/NMSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/src/main/main10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_13_R2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/customtnt-nms-v1_8_r2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/src/main/java/com/walrusone/customtnt/nms/v1_8_R2/NMSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/src/main/main10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R3/src/main/java/com/walrusone/customtnt/nms/v1_8_R3/NMSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R3/src/main/main10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R3/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R3/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_8_R3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R1/src/main/main10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R1/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R2/customtnt-nms-v1_9_r2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R2/src/main/java/com/walrusone/customtnt/nms/v1_9_R2/NMSHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R2/src/main/main10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R2/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_9_R2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/customtnt-plugin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/CustomTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/commands/BaseCmd.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/commands/Cmd.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/commands/CmdManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/commands/GiveCmd.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/commands/ReloadCmd.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/events/TNTPrimedEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/listeners/IconMenuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/listeners/TNTListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/menus/IconMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/menus/TimebombMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/TNTManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/TNTScheduler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/ConcussionTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/ExplosionType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/FlashbangTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/HealingTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/LuckyTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/SmokeBombTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/SniperTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/SuicideTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/tnts/types/TimeBombTNT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/utils/Messaging.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/com/walrusone/customtnt/utils/Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/messages.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/classes/plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_commandbook_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldedit_worldedit_bukkit_7_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldedit_worldedit_bukkit_7_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldedit_worldedit_core_7_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldedit_worldedit_core_7_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_13_R0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomTNT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/customtnt-parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/CustomTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/Messaging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/commands/BaseCmd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/commands/Cmd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/commands/CmdManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/commands/GiveCmd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/commands/ReloadCmd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/events/TNTPrimedEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/listeners/IconMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/listeners/TNTListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/menus/IconMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/menus/TimebombMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/TNTManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/TNTScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/ConcussionTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/ExplosionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/FlashbangTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/HealingTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/LuckyTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/SmokeBombTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/SniperTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/SuicideTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/utils/tnts/types/TimeBombTNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/resources/messages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomTNT-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/CustomTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/commands/BaseCmd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/commands/Cmd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/commands/CmdManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/commands/GiveCmd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/commands/ReloadCmd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/events/TNTPrimedEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/IconMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/listeners/TNTListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/menus/IconMenu$OptionClickEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/menus/IconMenu$OptionClickEventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/menus/IconMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/menus/TimebombMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/TNTManager$TNTType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/TNTManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/TNTScheduler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/ConcussionTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/ExplosionType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/FlashbangTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/HealingTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/LuckyTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/SmokeBombTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/SniperTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/SuicideTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/tnts/types/TimeBombTNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/utils/Messaging$MessageFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/utils/Messaging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/utils/Util$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walrusone/customtnt/utils/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/nms/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/nms/aggregated/target/" />
+    <ignored path="$PROJECT_DIR$/plugin/target/" />
+    <ignored path="$PROJECT_DIR$/nms/interfaces/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_8_R1/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_13_R2/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_8_R2/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_12_R1/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_11_R1/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_10_R1/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_9_R2/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_9_R1/target/" />
+    <ignored path="$PROJECT_DIR$/nms/v1_8_R3/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,20 +230,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>net.minecraft.server.v1_8_R3.NBTTagCompound;</find>
-      <find>org.bukkit.craftbukkit.v1_8_R3.inventory.CraftItemStack;</find>
-      <find>CustomTNT.get().getConfig()</find>
+      <find>1_13_R2</find>
+      <find>1_12_R1</find>
+      <find>1_11_R1</find>
+      <find>1_10_R1</find>
+      <find>1_9_R2</find>
+      <find>1_9_R1</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>net.minecraft.server.v1_13_R2.NBTTagCompound;</replace>
       <replace>org.bukkit.craftbukkit.v1_13_R2.inventory.CraftItemStack;</replace>
       <replace>config</replace>
+      <replace>com</replace>
+      <replace>utils</replace>
+      <replace>tnts</replace>
+      <replace>customtnt</replace>
+      <replace>1_8_R1</replace>
+      <replace>1_12_R1</replace>
+      <replace>1_11_R1</replace>
+      <replace>1_10_R1</replace>
+      <replace>1_9_R2</replace>
+      <replace>1_9_R1</replace>
+      <replace>1_8_R3</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\russe\Documents\GitHub\CustomTNT\plugin\src\main\java\com\walrusone\customtnt</dir>
+      <dir>C:\Users\russe\Documents\GitHub\CustomTNT\nms</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,36 +269,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTScheduler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/LuckyTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/MultiTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SuicideTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/TimeBombTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/ReloadCmd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/CmdManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/events/TNTPrimedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/menus/IconMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/listeners/IconMenuController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ChemicalTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SmokeBombTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ConsussionTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ConcussionTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/TNTScheduler.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/utils/Messaging.java" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R1/.project" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R1/customtnt-nms-v1_8_r1.iml" />
+        <option value="$PROJECT_DIR$/nms/v1_13_R2/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/customtnt-parent.iml" />
+        <option value="$PROJECT_DIR$/plugin/customtnt-plugin.iml" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R1/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R1/src/main/main10.iml" />
+        <option value="$PROJECT_DIR$/nms/aggregated/customtnt-nms-aggregated.iml" />
+        <option value="$PROJECT_DIR$/nms/v1_13_R2/src/main/main10.iml" />
+        <option value="$PROJECT_DIR$/plugin/pom.xml" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/LuckyTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/SniperTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/SuicideTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/TimeBombTNT.java" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R1/src/main/java/com/walrusone/customtnt/nms/v1_8_R1/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R2/pom.xml" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/CustomTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/listeners/TNTListener.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/utils/Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/DrillTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/GiveCmd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/BaseCmd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/listeners/TNTListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/menus/TimebombMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ExplosionType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SniperTNT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/CustomTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/ConcussionTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/SmokeBombTNT.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/utils/Util.java" />
+        <option value="$PROJECT_DIR$/nms/v1_12_R1/v1_12_R1/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_12_R2/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_12_R2/.project" />
+        <option value="$PROJECT_DIR$/nms/v1_12_R2/src/main/java/com/walrusone/customtnt/nms/v1_12_R1/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/v1_12_R1/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/nms/interfaces/src/main/java/com/walrusone/customtnt/api/NMS.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/menus/TimebombMenu.java" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R2/src/main/java/com/walrusone/customtnt/nms/v1_8_R2/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/v1_12_R1/src/main/java/com/walrusone/customtnt/nms/v1_12_R1/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/v1_13_R2/src/main/java/com/walrusone/customtnt/nms/v1_13_R2/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/v1_11_R1/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_11_R1/src/main/java/com/walrusone/customtnt/nms/v1_11_R1/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/v1_10_R1/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_10_R1/src/main/java/com/walrusone/customtnt/nms/v1_10_R1/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/v1_9_R2/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_9_R2/src/main/java/com/walrusone/customtnt/nms/v1_9_R2/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/v1_9_R1/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_9_R1/src/main/java/com/walrusone/customtnt/nms/v1_9_R1/NMSHandler.java" />
+        <option value="$PROJECT_DIR$/nms/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/aggregated/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R3/pom.xml" />
+        <option value="$PROJECT_DIR$/nms/v1_8_R3/src/main/java/com/walrusone/customtnt/nms/v1_8_R3/NMSHandler.java" />
       </list>
     </option>
   </component>
@@ -71,7 +328,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="CustomTNT" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="CustomTnt Parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -88,8 +345,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,71 +355,41 @@
             <path>
               <item name="CustomTNT" type="b2602c69:ProjectViewProjectNode" />
               <item name="CustomTNT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomTNT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomTNT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomTNT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomTNT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomTNT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomTNT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="customtnt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomTNT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomTNT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="customtnt" type="462c0819:PsiDirectoryNode" />
-              <item name="tnts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomTNT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomTNT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="customtnt" type="462c0819:PsiDirectoryNode" />
-              <item name="tnts" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomTNT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomTNT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="nms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550514053029" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SkyWarsReloaded" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550784932890" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/plugin/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\nms\v1_8_R3" />
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\nms\v1_9_R1" />
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\nms\v1_9_R2" />
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\nms\v1_10_R1" />
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\nms\v1_11_R1" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.walrusone.customtnt.tnts.types" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\nms" />
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\nms\v1_8_R1" />
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\plugin\src\main" />
+      <recent name="C:\Users\russe\Documents\GitHub\CustomTNT\plugin\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -195,7 +420,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34488273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -204,19 +429,21 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.3290461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290461" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Inspection Results" order="10" sideWeight="0.49946696" weight="0.3290461" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49520767" weight="0.3251599" />
+      <window_info active="true" anchor="right" id="Maven" order="4" sideWeight="0.49520767" visible="true" weight="0.32462686" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" order="7" sideWeight="0.50479233" side_tool="true" weight="0.3251599" />
@@ -252,141 +479,203 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/listeners/IconMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="85">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/utils/Messaging.java">
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/listeners/TNTListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5389">
+          <caret line="322" column="66" selection-start-line="322" selection-start-column="66" selection-end-line="322" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#15750#15751#0" expanded="true" />
+            <element signature="e#15825#15826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/ExplosionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/SniperTNT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/SuicideTNT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/TimeBombTNT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="871">
+          <caret line="118" column="68" selection-start-line="118" selection-start-column="68" selection-end-line="118" selection-end-column="68" />
+          <folding>
+            <element signature="e#4069#4070#0" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/TNTScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/CustomTNT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/utils/Messaging.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ChemicalTNT.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/MultiTNT.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/utils/Util.java">
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/ConcussionTNT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
+        <state relative-caret-position="746">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/DrillTNT.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="746">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/LuckyTNT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/tnts/types/SmokeBombTNT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/utils/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R1/v1_12_R1/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R1/v1_12_R1/customtnt-nms-v1_12_r1.iml" />
+    <entry file="file://$PROJECT_DIR$/nms/interfaces/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+        <state relative-caret-position="-1088">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/BaseCmd.java">
+    <entry file="file://$PROJECT_DIR$/plugin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="408">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/Cmd.java">
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R2/.project" />
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R2/src/main/java/com/walrusone/customtnt/nms/v1_12_R1/NMSHandler.java" />
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R2/src/main/main10.iml" />
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R2/.classpath" />
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R2/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R1/src/main/main10.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_8_R2/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/CmdManager.java">
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="136">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/GiveCmd.java">
+    <entry file="file://$PROJECT_DIR$/nms/interfaces/src/main/java/com/walrusone/customtnt/api/NMS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="76" column="13" lean-forward="true" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/commands/ReloadCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/events/TNTPrimedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/listeners/TNTListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#16311#16312#0" expanded="true" />
-            <element signature="e#16381#16382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/listeners/IconMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/menus/IconMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/menus/TimebombMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#468#525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ExplosionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="493">
           <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -394,105 +683,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/FlashbangTNT.java">
+    <entry file="file://$PROJECT_DIR$/nms/v1_13_R2/src/main/java/com/walrusone/customtnt/nms/v1_13_R2/NMSHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+        <state relative-caret-position="1293">
+          <caret line="142" column="29" selection-start-line="142" selection-start-column="29" selection-end-line="142" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
+            <element signature="e#4421#4422#0" expanded="true" />
+            <element signature="e#5254#5255#0" expanded="true" />
+            <element signature="e#5282#5283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/java/com/walrusone/customtnt/menus/TimebombMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="80" column="71" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_13_R2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_11_R1/src/main/main10.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_12_R1/src/main/java/com/walrusone/customtnt/nms/v1_12_R1/NMSHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="144" selection-start-line="144" selection-end-line="147" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5227#5228#0" expanded="true" />
+            <element signature="e#5255#5256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_11_R1/src/main/java/com/walrusone/customtnt/nms/v1_11_R1/NMSHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="129" column="39" selection-start-line="129" selection-start-column="39" selection-end-line="129" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/HealingTNT.java">
+    <entry file="file://$PROJECT_DIR$/nms/v1_11_R1/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state>
+          <caret selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_10_R1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_9_R1/src/main/java/com/walrusone/customtnt/nms/v1_9_R2/NMSHandler.java" />
+    <entry file="file://$PROJECT_DIR$/nms/v1_10_R1/src/main/java/com/walrusone/customtnt/nms/v1_10_R1/NMSHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SmokeBombTNT.java">
+    <entry file="file://$PROJECT_DIR$/nms/v1_9_R2/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="52" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/LuckyTNT.java">
+    <entry file="file://$PROJECT_DIR$/nms/v1_9_R2/src/main/java/com/walrusone/customtnt/nms/v1_9_R2/NMSHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_9_R1/src/main/java/com/walrusone/customtnt/nms/v1_9_R1/NMSHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_9_R1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/aggregated/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_8_R3/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms/v1_8_R2/src/main/java/com/walrusone/customtnt/nms/v1_8_R2/NMSHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="109" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4898#4899#0" expanded="true" />
+            <element signature="e#4926#4927#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SniperTNT.java">
+    <entry file="file://$PROJECT_DIR$/nms/v1_8_R3/src/main/java/com/walrusone/customtnt/nms/v1_8_R3/NMSHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="407">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4141#4142#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/SuicideTNT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/TimeBombTNT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1327#1354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/TNTScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/CustomTNT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walrusone/customtnt/tnts/types/ConcussionTNT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="163" selection-start-line="38" selection-start-column="163" selection-end-line="38" selection-end-column="163" />
         </state>
       </provider>
     </entry>
@@ -548,11 +893,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CustomTNT</last-edited>
+          <last-edited>customtnt-nms</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
